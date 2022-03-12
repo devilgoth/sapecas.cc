@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://cdn.discordapp.com/emojis/938934481136521266.gif?size=96&quality=lossless" type="image/gif">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900'>
+  <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+<div class="container">
+  <div class="at-section">
+  <div class="at-server__avatar">
+      <a href="https://discord.com/invite/sapecas" class="st-img">
+          <img src="https://images-ext-2.discordapp.net/external/bcW8T_Bmck1DJbDBl_1cgt-OFgjvC6k-YcW98KXS4Ec/https/cdn.discordapp.com/icons/938611029083045978/8ff097a0a989a49f6cdadbb21ddd19cf.png" alt=""/>
+        </a>
+  </div>
+  <div class="dc-img">
+    <a href="https://discord.com/invite/sapecas">
+        <img src="https://logodownload.org/wp-content/uploads/2017/11/discord-logo-8-1.png">
+    </a>
+</div>
+  <div class="at-section__title">sapecas</div>
+  <div id="button" style="cursor:pointer" onclick="openServer()"> SERVIDOR </div>
+  </div>
+  <script>
+    const openServer = () => window.open('https://discord.gg/sapecas', '_blank');
+  </script>
+  <!-- =============== MARIS =============== -->
+  <div class="at-grid" data-column="3">
+    <div class="at-column">
+      <div class="at-user">
+        <div class="at-user__avatar">
+          <img id="maris-img" alt=""/>
+        </div>
+        <div class="at-user__name">
+            <a id="maris">maris</a>
+            <br>
+          <a>💔</a></div>
+        <br>
+        </ul>
+      </div>
+    </div>
+
+    <!-- =============== AGATHA =============== -->
+    <div class="at-column">
+      <div class="at-user">
+        <div class="at-user__avatar"> 
+        <img id="agatha-img"/>
+        </div>
+        <div class="at-user__name">
+            <a id="agatha">agatha</a>
+            <br>
+        <a>💔</a>
+        </div>
+        <br>
+      </div>
+    </div>
+    
+    <!-- =============== VIVI =============== -->
+    <div class="at-column">
+        <div class="at-user">
+          <div class="at-user__avatar"> 
+          <img id="vivi-img"/>
+          </div>
+          <div class="at-user__name">
+              <a id="vivi">vivi</a>
+              <br>
+          <a>💔</a>
+          </div>
+          <br>
+        </div>
+      </div>
+
+    <!-- =============== BREND =============== -->
+    <div class="at-column">
+      <div class="at-user">
+        <div class="at-user__avatar"> 
+        <img id="brend-img"/>
+        </div>
+        <div class="at-user__name">
+            <a id="brend">brend</a>
+            <br>
+        <a>💔</a>
+        </div>
+        <br>
+      </div>
+    </div>
+
+    <!-- =============== NAMI =============== -->
+    <div class="at-column">
+        <div class="at-user">
+          <div class="at-user__avatar"> 
+          <img id="nami-img"/>
+          </div>
+          <div class="at-user__name">
+              <a id="nami">nami</a>
+              <br>
+          <a>💔</a>
+          </div>
+          <br>
+        </div>
+      </div>
+
+      <!-- =============== SYZZ =============== -->
+    <div class="at-column">
+      <div class="at-user">
+        <div class="at-user__avatar"> 
+        <img id="syzz-img"/>
+        </div>
+        <div class="at-user__name">
+            <a id="syzz">syzz</a>
+            <br>
+        <a>💔</a>
+        </div>
+        <br>
+      </div>
+    </div>
+
+<script>
+ var rev = "fwd";
+    function titlebar(val){
+        var msg  = "discord.gg/sapecas";
+        var res = " ";
+        var speed = 100;
+        var pos = val;
+        msg = ""+msg+"";
+        var le = msg.length;
+        if(rev == "fwd"){
+            if(pos < le){
+                pos = pos+1;
+                scroll = msg.substr(0,pos);
+                document.title = scroll;
+                timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+            else {
+                rev = "bwd";
+                timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+        }
+        else {
+            if(pos > 0) {
+                pos = pos-1;
+                var ale = le-pos;
+                scrol = msg.substr(ale,le);
+                document.title = scrol;
+                timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+            else {
+                rev = "fwd";
+                timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+        }
+    }
+    titlebar(0);
+    </script>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript" src="./src/js/main.js"></script>
+</body>
+
+</html>
